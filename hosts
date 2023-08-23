@@ -1,0 +1,9 @@
+[aws]
+ec2-54-196-122-12.compute-1.amazonaws.com	
+ec2-54-162-63-218.compute-1.amazonaws.com
+
+[control]
+ec2-54-196-122-12.compute-1.amazonaws.com	
+
+[workers]
+ec2-54-162-63-218.compute-1.amazonaws.com

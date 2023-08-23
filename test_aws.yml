@@ -1,0 +1,21 @@
+---
+- name: Create EC2 instance
+  hosts: localhost
+  gather_facts: False
+
+  tasks:
+    - name: Create EC2 instance using aws module
+      amazon.aws.ec2_instance:
+        name: ansible_aws_demo
+        key_name: "ansible_aws"
+        image_id: ami-0ea18256de20ecdfc # Ubuntu 22.04 LTS
+        instance_type: t2.micro
+        security_group: default
+        network:
+          assign_public_ip: true
+        region: ca-central-1
+        count: 1
+        state: absent
+        tags:
+          Provisioner: ansible
+      register: result
