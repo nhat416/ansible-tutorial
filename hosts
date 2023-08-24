@@ -1,9 +1,9 @@
 [aws]
-ec2-54-196-122-12.compute-1.amazonaws.com	
-ec2-54-162-63-218.compute-1.amazonaws.com
+3.92.53.211
+52.87.202.106
 
 [control]
-ec2-54-196-122-12.compute-1.amazonaws.com	
+3.92.53.211
 
 [workers]
-ec2-54-162-63-218.compute-1.amazonaws.com
+52.87.202.106
