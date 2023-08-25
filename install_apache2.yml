@@ -1,5 +1,5 @@
 ---
-- name: Install nginx
+- name: Install Apache
   hosts: workers
   become: true
   
@@ -8,8 +8,8 @@
       ansible.builtin.apt:
         update_cache: yes
 
-    - name: Install Nginx
+    - name: Install Apache
       ansible.builtin.apt:
-        name: nginx
+        name: apache2
         state: latest
         update_cache: yes
