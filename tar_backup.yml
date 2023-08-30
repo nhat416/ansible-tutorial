@@ -1,0 +1,10 @@
+---
+- name: Backup files with tar
+  hosts: workers
+  become: true
+
+  tasks:
+    - name: Compress with tar
+      community.general.archive:
+        path: /home/ubuntu/nhat
+        dest: /home/ubuntu/nhat.tgz
